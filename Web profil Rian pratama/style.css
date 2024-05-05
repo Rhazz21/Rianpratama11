@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.9rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/*button*/
+.btn {
+  padding: 1rem 1.5rem;
+  background: white;
+  border: 1.5px solid black;
+  cursor: pointer;
+}
+
+/* title */
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: grey;
+  position: relative;
+  padding-left: 40px;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.pre-title::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+/*logo dan navbar menu*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  transition: 0.2s ease-in-out;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: black;
+}
+
+nav ul li a {
+  color: black;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-text,
+.home-image {
+  flex: 1;
+}
+
+.home-image img {
+  width: 320px;
+  border-radius: 0.5rem;
+  margin-left: 180px;
+}
+
+/*Home slection*/
+#home {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.home-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+  color: black;
+}
+
+section {
+  padding-left: 3rem;
+  padding-bottom: 5rem;
+}
+
+/* About selection*/
+#about {
+  background-color: rgb(125, 119, 119);
+  padding: 6rem 0;
+}
+
+.selection-title-about {
+  text-align: center;
+  margin: 3rem 0 2rem;
+}
+
+/* layout*/
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.About {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: rgb(46, 44, 44);
+}
+
+.Abouth h4 {
+  color: white;
+  margin: 0.5rem 0;
+}
+
+.About p {
+  color: white;
+}
+
+.about-icon {
+  background-color: rgb(93, 83, 237);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
+}
+
+/* End of About*/
+
+/*skills and Eksperience*/
+
+#skills {
+  padding: 6rem;
+  background: white;
+}
+
+.section-titles-skill {
+  text-align: center;
+  margin: 1rem 0 4rem;
+}
+
+.skills-grid {
+  display: flex;
+  grid-column: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.experience {
+  display: flex;
+  gap: 2rem;
+}
+
+.experience line {
+  padding: 0 0.7rem;
+}
+.experience .line div {
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.experience-info {
+  margin-bottom: 2rem;
+}
+
+.experience .line div::before {
+  content:"";
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  left: -6px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.5rem;
+}
+
+.skills-right {
+  line-height: 2rem;
+  padding: 0 1rem;
+}
+
+/*END of EXperience and skills*/
+/* Styles for contact form */
+#contact {
+  padding: 6rem;
+}
+
+.contact main-container {
+  margin-bottom: 2rem; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+button.btn-submit {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+/*END Contact*/
+
+/*Footer */
+
+footer {
+  margin-bottom: 0;
+  padding: 4em 0;
+  background: rgb(209, 207, 207);
+  text-align: center;
+}
+
+.footer-icon a {
+  margin: 0 0.5rem;
+}
+
+.footer-icon a :hover {
+  fill: black;
+}
+
+.footer-icon{
+  fill: grey;
+}
